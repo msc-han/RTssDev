@@ -2,5 +2,27 @@
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": ["*.{css,scss,js,png,gif,ico,jpg,svg}"]
-  }
+  },
+  "auth": {
+    "identityProviders": {
+        "customOpenIdConnectProviders": {
+            "b2c": {
+                "registration": {
+                    "clientIdSettingName": "5f211da3-59c7-408b-b57f-f82bc14d52f6",
+                    "clientCredential": {
+                        "clientSecretSettingName": "ff868ba3-669d-4c3d-8e9c-ab3da0b47792"
+                    },
+                    "openIdConnectConfiguration": {
+                        "wellKnownOpenIdConfiguration": "https://victorious-hill-0be723700.1.azurestaticapps.net/.auth/login/b2c/callback"
+                    }
+                },
+                "login": {
+                    "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+                    "scopes": ["openid", "profile"]
+                }
+            }
+        }
+    }
+}
+
 }

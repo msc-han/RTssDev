@@ -16,6 +16,8 @@ const HeaderBarBrand = () => (
       <span className="brand-second">SHOPPING</span>
       <span className="brand-third">LIST</span>
     </NavLink>
+    <a href="/.auth/login/b2c">Login</a>
+    <a href="/.auth/me">My Info</a>
   </div>
 );
 
