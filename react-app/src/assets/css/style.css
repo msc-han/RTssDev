@@ -1,0 +1,105 @@
+.multi-select {
+    --input-width: 80%;
+}
+
+
+.btn-1 {
+    margin-left: 20px;
+}
+
+._h5 {
+    width: 700px;
+}
+
+.h5-1 {
+    background-color: #3366cc;
+    color: #ffffff;
+}
+
+
+.h5-2 {
+    background-color: #ff9900;
+    color: #ffffff;
+}
+
+
+.h5-3 {
+    background-color: #40bf40;
+    color: #ffffff;
+}
+
+
+.h5-4 {
+    background-color: #808080;
+    color: #ffffff;
+}
+
+
+.field-checkbox-1 {
+    background-color: #d6e0f5;
+}
+
+.field-checkbox-2 {
+    background-color: #ffebcc;
+}
+
+
+.field-checkbox-3 {
+    background-color: #d9f2d9;
+}
+
+
+.field-checkbox-4 {
+    background-color: #E0E0E0;
+}
+
+.field-checkbox {
+    width: 700px;
+}
+.field-checkbox {
+    width: 700px;
+}
+.tb-center {
+    text-align: center;
+}
+.Linearli {
+    list-style:none;
+}
+.Linearlibi{
+    font-weight: bold;
+    padding: 5px;
+}
+.Linearlikon{
+    padding: 10px;
+}
+.Linearlikon-l{
+    list-style:circle;
+}
+.konpitext{
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+.Linearlihtml{
+    list-style:none;
+    border: solid;
+    border-color: #d6e0f5;
+    background-color: #d6e0f5;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+.LinearliBD{
+    list-style:none;
+    font-size: 14px;
+}
+.LinearliBD .BDTitle{
+    font-weight: bold;
+}
+.tb-center .BDketka1{
+    background-color: #f5d7d4;
+}
+.tb-center .BDketka2{
+    background-color: #f1d1c9;
+}
+.tb-center .BDketka3{
+    background-color: #f3d7ac;
+}

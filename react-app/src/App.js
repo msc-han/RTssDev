@@ -1,36 +1,10 @@
-import React, { Component, lazy, Suspense } from 'react';
-import 'bulma/css/bulma.css';
-import './styles.scss';
-import { Redirect, Route, Switch } from 'react-router-dom';
-import { withRouter } from 'react-router';
-import { HeaderBar, NavBar, NotFound } from './components';
-import About from './About';
+import { useRoutes } from "react-router-dom";
+import Themeroutes from "./routes/Router";
 
-const Products = withRouter(
-  lazy(() => import(/* webpackChunkName: "products" */ './products/Products'))
-);
+const App = () => {
+  const routing = useRoutes(Themeroutes);
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <HeaderBar />
-        <div className="section columns">
-          <NavBar />
-          <main className="column">
-            <Suspense fallback={<div>Loading...</div>}>
-              <Switch>
-                <Redirect from="/" exact to="/products" />
-                <Route path="/products" component={Products} />
-                <Route path="/about" component={About} />
-                <Route exact path="**" component={NotFound} />
-              </Switch>
-            </Suspense>
-          </main>
-        </div>
-      </div>
-    );
-  }
-}
+  return <div className="dark">{routing}</div>;
+};
 
 export default App;
